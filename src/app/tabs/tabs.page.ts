@@ -3,6 +3,7 @@ import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/angu
 import { addIcons } from 'ionicons';
 import { peopleOutline, storefrontOutline, happyOutline } from 'ionicons/icons';
 
+
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',

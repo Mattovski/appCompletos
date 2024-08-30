@@ -1,17 +1,35 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="profile-container">
+    <!-- Tarjeta de perfil -->
+    <div class="avatar-container">
+      <ion-avatar>
+        <ion-icon name="person-circle-outline" class="avatar-icon"></ion-icon>
+      </ion-avatar>
+    </div>
+    <ion-card class="profile-card">
+      <ion-card-header>
+      </ion-card-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+      <ion-card-content>
+        <div class="profile-info">
+          <h2>Nombre de Usuario</h2>
+          <p>correoejemplo.com</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Tarjeta de opciones -->
+    <ion-card class="options-card">
+      <ion-card-header>
+        <ion-card-title>Opciones</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Cambiar a Modo Oscuro</ion-label>
+          <ion-toggle (ionChange)="toggleDarkMode($event)"></ion-toggle>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
