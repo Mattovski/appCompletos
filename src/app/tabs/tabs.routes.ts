@@ -9,17 +9,27 @@ export const routes: Routes = [
       {
         path: 'inicio',
         loadComponent: () =>
-          import('../tab1/tab1.page').then((m) => m.Tab1Page),
+          import('../inicio/inicio.page').then((m) => m.InicioPage),
       },
       {
         path: 'nosotros',
         loadComponent: () =>
-          import('../tab2/tab2.page').then((m) => m.Tab2Page),
+          import('../nosotros/nosotros.page').then((m) => m.NosotrosPage),
       },
       {
         path: 'perfil',
         loadComponent: () =>
-          import('../tab3/tab3.page').then((m) => m.Tab3Page),
+          import('../perfil/perfil.page').then((m) => m.PerfilPage),
+      },
+      {
+        path: 'mas',
+        loadComponent: () =>
+          import('../mas/mas.page').then((m) => m.MasPage),
+      },
+      {
+        path: 'carrito',
+        loadComponent: () =>
+          import('../carrito/carrito.page').then((m) => m.CarritoPage),
       },
       {
         path: '',

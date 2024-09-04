@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { addIcons } from 'ionicons';
 import { personCircleOutline } from 'ionicons/icons';
 
 @Component({
-  selector: 'app-tab3',
-  templateUrl: 'tab3.page.html',
-  styleUrls: ['tab3.page.scss'],
+  selector: 'app-perfil',
+  templateUrl: './perfil.page.html',
+  styleUrls: ['./perfil.page.scss'],
   standalone: true,
   imports: [IonicModule], 
 })
-export class Tab3Page {
+export class PerfilPage {
+
   constructor() {
     addIcons({ personCircleOutline });
   }

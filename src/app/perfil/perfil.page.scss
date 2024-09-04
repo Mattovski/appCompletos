@@ -1,10 +1,10 @@
 .profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
 }
 
 .profile-card {
@@ -31,11 +31,11 @@
 
 .avatar-icon {
   font-size: 100px;
+  color: black;
 }
 
 .profile-info {
   text-align: center;
-  color: white;
 }
 
 .options-card {

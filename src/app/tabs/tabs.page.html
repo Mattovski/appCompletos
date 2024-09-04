@@ -1,18 +1,31 @@
-<ion-tabs>
+<ion-tabs (ionTabsDidChange)="onTabChange($event.tab)">
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="nosotros" href="/tabs/tab2">
-      <ion-icon name="people-outline"></ion-icon>
-      <ion-label>Nosotros</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="inicio" href="/tabs/tab1">
+    <ion-tab-button tab="nosotros" href="/tabs/nosotros" [ngClass]="{ 'active-tab': activeTab === 'nosotros' }">
       <ion-icon name="storefront-outline"></ion-icon>
-      <ion-label>Inicio</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="perfil" href="/tabs/tab3">
-      <ion-icon name="happy-outline"></ion-icon>
-      <ion-label>Perfil</ion-label>
+    <ion-tab-button tab="carrito" href="/tabs/carrito" [ngClass]="{ 'active-tab': activeTab === 'carrito' }">
+      <ion-icon name="cart-outline" style="font-size: 28px;"></ion-icon>
+    </ion-tab-button>
+
+    <!-- Span para crear el espacio donde debería ir el botón de Inicio -->
+    <span class="placeholder-home-tab">
+    </span>
+
+
+    <ion-tab-button tab="perfil" href="/tabs/perfil" [ngClass]="{ 'active-tab': activeTab === 'perfil' }">
+      <ion-icon name="happy-outline" style="font-size: 25px;"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="mas" href="/tabs/mas" [ngClass]="{ 'active-tab': activeTab === 'mas' }">
+      <ion-icon name="menu-outline" style="font-size: 35px;"></ion-icon>
     </ion-tab-button>
   </ion-tab-bar>
+
+  <!-- Contenedor del botón de Inicio -->
+  <div class="home-button-container" [ngClass]="{ 'active-home': activeTab === 'inicio' }">
+    <button class="home-button" (click)="navigateToHome()">
+      <ion-icon name="fast-food-outline"></ion-icon>
+    </button>
+  </div>
 </ion-tabs>
