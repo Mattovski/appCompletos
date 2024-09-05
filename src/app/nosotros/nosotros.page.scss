@@ -1,0 +1,29 @@
+.bordered-card {
+    border: 2px dashed #351512; /* Línea entrecortada */
+    border-radius: 20px; /* Bordes curvos */
+    padding: 10px; /* Ajusta el padding para acercar la línea al borde */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#imgNosotros, #imgNuestrasTiendas {
+    max-width: 65%;
+    height: auto;
+}
+
+#imgNuestrasTiendas {
+    margin-top: 5px;
+}

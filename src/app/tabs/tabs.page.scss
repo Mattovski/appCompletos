@@ -1,10 +1,10 @@
-
+/* ### CONFIGURACIÓN GENERAL ### */
 ion-tab-bar, ion-tab-button {
     background-color: #351512;
     --ripple-color: white; /* Color del efecto de ondulación al presionar un botón */
 }
 
-/* Estilos para el botón inicio */
+/* ### CONFIGURACIÓN BOTÓN DE INICIO ### */
 .placeholder-home-tab {
     flex: 1; /* Toma el espacio en lugar del botón de Inicio */
 }
@@ -54,7 +54,7 @@ ion-tab-bar, ion-tab-button {
     color: #351512; /* Cambia el ícono a blanco cuando está activo */
 }
 
-/* Estilos para los demás botones del tab */
+/* ### CONFIGURACIÓN RESTO DE BOTONES ### */
 ion-tab-button {
     transition: background-color 0.3s, color 0.3s;
     background-color: #351512;
