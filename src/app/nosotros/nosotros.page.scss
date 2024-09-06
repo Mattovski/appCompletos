@@ -15,7 +15,7 @@
 }
   
 .image-container img {
-    max-width: 100%;
+    max-width: 110%;
     height: auto;
 }
 
@@ -26,4 +26,15 @@
 
 #imgNuestrasTiendas {
     margin-top: 5px;
+}
+
+ion-card-content p {
+    font-family: 'GothicA1-Regular', sans-serif; /* Asegúrate de que 'Adelina' esté disponible */
+    color: #351512; /* Cambia esto al color que prefieras */
+    font-size: 16px; /* Tamaño de la fuente */
+    line-height: 1.5; /* Espaciado entre líneas para mayor legibilidad */
+}
+  
+#text-card {
+    background-color: #e9dfd1;
 }
