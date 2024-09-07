@@ -25,4 +25,9 @@ export const routes: Routes = [
     path: 'mas',
     loadComponent: () => import('./mas/mas.page').then( m => m.MasPage)
   },
+  {
+    path: '',
+    redirectTo: '/tabs/inicio',
+    pathMatch: 'full',
+  },
 ];

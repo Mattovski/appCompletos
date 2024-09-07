@@ -8,11 +8,8 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule]
 })
-export class NosotrosPage implements OnInit {
+export class NosotrosPage {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
