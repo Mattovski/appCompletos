@@ -1,7 +1,7 @@
 <ion-tabs (ionTabsDidChange)="onTabChange($event.tab)">
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="nosotros" href="/tabs/nosotros" [ngClass]="{ 'active-tab': activeTab === 'nosotros' }">
-      <ion-icon name="storefront-outline"></ion-icon>
+      <ion-icon name="storefront-outline" style="font-size: 24px;"></ion-icon>
     </ion-tab-button>
 
     <ion-tab-button tab="carrito" href="/tabs/carrito" [ngClass]="{ 'active-tab': activeTab === 'carrito' }">

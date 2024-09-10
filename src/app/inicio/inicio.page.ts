@@ -25,9 +25,21 @@ export class InicioPage implements OnInit {
   constructor(private cartService: CarritoService) {}
 
   ngOnInit() {
+    /* ### BASE DE DATOS LOCAL ### */
     this.products = [
-      { id: 1, nombre: 'Completo Italiano', descripcion: 'Palta, tomate y mayo', precio: 3000, cantidad: 0 },
-      { id: 2, nombre: 'Completo Palta', descripcion: 'Palta', precio: 3500, cantidad: 0},
+      { 
+        id: 1, 
+        nombre: 'Completo Italiano + bebida media', 
+        descripcion: 'Pan copihue casero, vienesa de pollo, palta chilena, tomate y mayo casera', 
+        precio: 1500, 
+        cantidad: 0 
+      },
+      { id: 2, 
+        nombre: 'As Italiano + bebida media', 
+        descripcion: 'Pan copihue casero, churrasco, palta chilena, tomate y mayo casera', 
+        precio: 2500, 
+        cantidad: 0
+      },
     ];
   }
 

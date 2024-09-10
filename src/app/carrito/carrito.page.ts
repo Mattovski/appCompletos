@@ -17,7 +17,7 @@ export class CarritoPage implements OnInit {
   total = 0;
 
   constructor(private cartService: CarritoService) {
-    addIcons({removeCircle,addCircle,closeCircle})
+    addIcons({ removeCircle, addCircle, closeCircle });
   }
 
   ngOnInit() {
@@ -26,8 +26,10 @@ export class CarritoPage implements OnInit {
   }
 
   decreaseProduct(product: Product) {
-    this.cartService.decreaseProduct(product);
-    this.calculateTotal();
+    if (product.cantidad > 1) {
+      this.cartService.decreaseProduct(product);
+      this.calculateTotal();
+    }
   }
 
   increaseProduct(product: Product) {
@@ -43,5 +45,8 @@ export class CarritoPage implements OnInit {
   calculateTotal() {
     this.total = this.carrito.reduce((acc, p) => acc + (p.precio * p.cantidad), 0);
   }
-}
 
+  finalizarCompra() {
+    console.log("Compra finalizada");
+  }
+}
